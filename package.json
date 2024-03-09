@@ -1,0 +1,13 @@
+{
+  "name": "token-creation",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "@metaplex-foundation/mpl-token-metadata": "^2.5.2",
+    "@solana/spl-token": "^0.4.0",
+    "@solana/web3.js": "^1.89.1",
+    "bn.js": "^5.2.1",
+    "fs": "^0.0.1-security",
+    "nft.storage": "^7.1.1"
+  }
+}

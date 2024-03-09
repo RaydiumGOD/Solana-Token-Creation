@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#initial-setup-and-configuration">Initial setup and configuration</a>
+<ul>
+<li><a href="#setup">Setup</a></li>
+<li><a href="#configuration">Configuration</a></li>
+</ul>
+</li>
+<li><a href="#how-to-run-the-project.">How to Run the project.</a></li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="initial-setup-and-configuration">Initial setup and configuration</h1>
+<h2 id="setup">Setup</h2>
+<ol>
+<li>Download Nodejs v16.13.0 from <a href="https://nodejs.org/en/blog/release/v16.13.0">Node.js — Node v16.13.0 (LTS) (nodejs.org)</a></li>
+<li>Install it.</li>
+<li>Open command prompt, goto project folder.</li>
+<li>Run command <code>yarn</code>, press enter.</li>
+</ol>
+<h2 id="configuration">Configuration</h2>
+<ol>
+<li>Paste your token image in project directory and name it as <code>image.png</code></li>
+<li>Open <code>config.js</code></li>
+<li>Values for variables:
+<ul>
+<li>
+<p><strong>PRIVATE_KEY</strong>: Replace <code>aaaaa</code> with your wallet private key.</p>
+</li>
+<li>
+<p><strong>endpoint</strong>: Replace <code>aaaaa</code> with your RPC HTTP(S) URL.</p>
+</li>
+<li>
+<p><strong>NFT_STORAGE_TOKEN</strong>: Goto <a href="https://nft.storage/">https://nft.storage/</a>. Then sign up, you can use temp mail. Then goto <a href="https://nft.storage/manage/">Manage API Keys - NFT Storage</a> and click new key. It will generate a key for you. Copy it and  <code>aaaaa</code> with your nft.storage api key. <em><strong>Note</strong></em>: Nft.storage is free storage for tokens metadata.</p>
+</li>
+<li>
+<p><strong>revokeMintBool</strong>: If you dont want to revoke mint, set it to <code>false</code>. By default it has been set to <code>true</code>.</p>
+</li>
+<li>
+<p><strong>revokeFreezeBool</strong>: If you want to revoke Freeze, set it to <code>true</code>. By default it has been set to <code>false</code>.</p>
+</li>
+<li>
+<p><strong>tokenInfo</strong>:<br>
+<strong>Example</strong>: Cant add in guide because formatting will destroy your understanding just open config.js and read it there.</p>
+<ul>
+<li><strong>amount</strong>: Set amount of tokens you want to create.</li>
+<li><strong>decimals</strong>: Set decimals of token.</li>
+<li><strong>metadata</strong>: Leave it empty as it is.</li>
+<li><strong>symbol</strong>: Set token symbol. (Note: It should not be longer than 10 Characters)</li>
+<li><strong>tokenName</strong>: Set token name</li>
+</ul>
+</li>
+<li>
+<p><strong>metaDataforToken</strong>:<br>
+<strong>Example</strong>: Cant add in guide because formatting will destroy your understanding just open config.js and read it there. Each of these sections in metadata are optional. If you dont want to add them, you can remove them but i have added enough information for your understanding incase you wanted to add every piece in future.</p>
+<ol>
+<li><strong>image</strong>: Leave it empty as it is.</li>
+<li><strong>description</strong>: Add description of your token.</li>
+<li><strong>extensions</strong>:
+<ul>
+<li><strong>website</strong>: Replace it with your website url.</li>
+<li><strong>twitter</strong>: Replace it with your twitter url as shown in example in config.js.</li>
+<li><strong>telegram</strong>: Replace it with your telegram url.</li>
+<li>You can add further socials also like discord as <code>"discord": "url_to_discord"</code></li>
+</ul>
+</li>
+<li><strong>tags</strong>: Enter your tags as they are defined in example.</li>
+<li><strong>Creator</strong>:
+<ul>
+<li><strong>name</strong>: Ever seen tokens created by dex ui labs? Enter something like Papi chulo as the creator. Upto u whatever u wanna add.</li>
+<li><strong>site</strong>: Site of the creator. e.g. when u create tokens with dexui, dex ui adds their website here. So people can come and create through them :D. You can add my github lol.</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="we-done-with-configuration.">We done with configuration.</h3>
+<h1 id="how-to-run-the-project.">How to Run the project.</h1>
+<p>Just run the command <code>node ./main.js</code> and it will create the token for you if everything you entered was correct :D.</p>
+<p><strong>Example of token i created with this code:</strong> <a href="https://solscan.io/token/Bj3EDqheEpjSVSwJxWkxYNpPHX1PWQKm7AtpQj8eCMcQ">Solscan</a></p>
+
+    </div>
+  </div>
+</body>
+
+</html>
